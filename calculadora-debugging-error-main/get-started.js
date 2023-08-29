@@ -3,8 +3,22 @@ function onClick() {
     label.textContent = 'Error: Uno o los dos inputs están vacíos.';
     return;
   }
+  if(notAnumber()){
+    label.textContent = "Error: Uno o los dos campos tienen caracteres de texto o invalidos";
+    return;
+  }
   updateLabel();
 }
+
+function notAnumber(){
+  if(isNaN(getNumber1()) || isNaN(getNumber2())){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+
 function inputsAreEmpty() {
   if (getNumber1() === '' || getNumber2() === '') {
     return true;
@@ -13,8 +27,8 @@ function inputsAreEmpty() {
   }
 }
 function updateLabel() {
-  var addend1 = getNumber1();
-  var addend2 = getNumber2();
+  var addend1 = parseFloat(getNumber1());
+  var addend2 = parseFloat(getNumber2());
   var sum = addend1 + addend2;
   label.textContent = addend1 + ' + ' + addend2 + ' = ' + sum;
 }
