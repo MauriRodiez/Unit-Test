@@ -13,7 +13,7 @@ function resta(a,b){
     }else{
         return a - b;
     }
-}
+} 
 
 function multiplicacion(a,b){
     if(isNaN(a) || isNaN(b)){
