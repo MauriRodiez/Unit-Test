@@ -8,7 +8,7 @@ const { suma, resta, multiplicacion, division } = require("../calculadora.js");
 describe("Prueba de sumas", () => {
   test("suma de dos numeros", () => {
     expect(suma(1, 2)).toBe(3);
-  });
+  }); 
 
   test("suma de cero", () => {
     expect(suma(0, 0)).toBe(0);
