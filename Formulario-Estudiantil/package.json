@@ -9,7 +9,7 @@
     "test:coverage": "jest --coverage"
   },
   "keywords": [
-    "js",
+    "js",git 
     "javascript",
     "testing",
     "jest",
